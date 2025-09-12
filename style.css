@@ -867,4 +867,12 @@ footer {
   background: linear-gradient(135deg, #0f172a, #1e293b, #2c5364); /* dark blue mix */
   color: white;
 }
+#contact a {
+  text-decoration: none;  /* underline hata dega */
+}
+
+#contact a:hover {
+  text-decoration: underline; /* hover par underline chahiye to rakho */
+  color: #3b82f6; /* hover color change */
+}
 
