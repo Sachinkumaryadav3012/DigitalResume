@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Stylish Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+  <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+</script>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">My<span>Portfolio</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+<!-- ===== ABOUT / PROFILE SECTION ===== -->
+<section id="about">
+  <div class="about-container">
+    <div class="about-img">
+      <img src="sachin w e-pica 3.png" alt="Profile Picture">
+    </div>
+
+    <div class="about-text " >
+      <h2>About <span>Me</span></h2>
+      <p>
+        Hi, I'm <strong>Sachin</strong>, a passionate <span>Frontend Developer</span> 
+        who loves creating stunning, modern, and interactive websites.
+        My goal is to turn ideas into reality with clean code & creative designs.
+      </p>
+
+      <div class="about-details">
+        <p><strong>👨‍💻 Experience:</strong> Hands-on Experience</p>
+        <p><strong>🎨 Skills:</strong> Mern Stack Web Developer</p>
+        <p><strong>📍 Location:</strong> Lucknow </p>
+      </div>
+
+      <a href="#contact" class="about-btn">Hire Me</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- SKILLS -->
+  <!-- SKILLS -->
+<section id="skills " class="skills reveal reveal 
+    -zoom">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <i class="fa-brands fa-html5"></i>
+      <span>HTML</span>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-css3-alt"></i>
+      <span>CSS</span>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-js"></i>
+      <span>JavaScript</span>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-react"></i>
+      <span>React</span>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-git-alt"></i>
+      <span>Git</span>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-node"></i>
+      <span>Node.js</span>
+    </div>
+    
+  </div>
+</section>
+
+
+  <!-- PROJECT -->
+<!-- ===== PROJECTS SECTION ===== -->
+<!-- ===== PROJECTS SECTION ===== -->
+<!-- ===== PROJECTS SECTION ===== -->
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+  <div class="project-info">
+    <h3>CaptureHub</h3>
+    <p>CaptureHub is a modern photo gallery project built with HTML & CSS, featuring responsive design and smooth hover effects. 🚀</p>
+    <a href="https://sachinkumaryadav3012.github.io/CaptureHub/" target="_blank" class="btn">View Project</a>
+  </div>
+</div>
+
+
+    <!-- Project 2 (Coming Soon) -->
+    <div class="project-card">
+  <div class="project-info">
+    <h3>Coming Soon</h3>
+    <p> Stay Tuned – Big Reveal Ahead🚀</p>
+    <a href="" target="_blank" class="btn">View Project</a>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+<!-- ===== CONTACT SECTION ===== -->
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-container">
+    
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><i class="fas fa-user"></i> sachin kumar yadav</p>
+      <p><i class="fas fa-envelope"></i> 
+        <a href="mailto:sachinkryadav609@gmail.com">sachinkryadav609@gmail.com</a>
+      </p>
+      <p><i class="fab fa-github"></i> 
+        <a href="https://github.com/Sachinkumaryadav3012" target="_blank">github.com/Sachinkumaryadav3012</a>
+      </p>
+      <p><i class="fab fa-linkedin"></i> 
+        <a href="https://linkedin.com/in/sachin-kumar-yadav-568a07263" target="_blank">linkedin.com/in/sachin-kumar-yadav-568a07263</a>
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Font Awesome (Icons) -->
+<script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+
+
+  <!-- ===== FOOTER SECTION ===== -->
+<footer>
+  <div class="footer-container">
+    <h2>🚀 MyPortfolio</h2>
+    <p>Designed & Developed with ❤️ by <span>sachin</span></p>
+    
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://github.com/Sachinkumaryadav3012"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/sachin-kumar-yadav-568a07263"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+    <p class="copyright">© 2025 sachin | All Rights Reserved</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
